@@ -1,0 +1,56 @@
+<body style="background-image: url('https://images.pexels.com/photos/3683056/pexels-photo-3683056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')";></body>
+
+<main>
+            <div> 
+                        <h2 style="color:teal">INVOICE TO</h2><hr>
+                        <h3 class="to"><%=user.email%></h3>
+                        <h3>Address: <br><%=addr.street%> <%=addr.area%> <%=addr.state%> <%=addr.country%></h3>
+                   
+                        <h3>Brought on:<br> <%=ord.at%></h3>
+                        <h3>Due Date: 22/11/2020</h3><br><br>
+                   
+               
+                <table border="4" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th> </th>
+                            <th class="text-left">PRODUCT</th>
+                            <th class="text-right">QUANTITY</th>
+                            <th class="text-right">    </th>
+                            <th class="text-right">TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td class="no"></td>
+                                <td class="text-left"><h3><%=ord.title%></h3></td>
+                                <td class="text-right"><%=ord.qty%></td>
+                                <th class="text-right">        </th>
+                                <td class="text-right"> Rs.<%=ord.price%></td>
+                            </tr>
+                    </tbody>
+                    </table>
+                    <br>
+                <!-- <button><a href="/shop/purchase">Pay Now</a></button> -->
+                <h2 style="color:teal">Thank you for shopping with us!</h2> 
+                <br><h3 style="color:tomato"><a href="/"  >Return to Homepage</a></h3>
+            </main>
+            
+
+</div>
+<style>
+    div {
+        background-color:white;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid gray;
+   margin: 0;
+  
+left: 50%; 
+
+top: 50%;
+right: 50%;
+margin-left: 400px;
+margin-top: 50px;
+}
+</style>

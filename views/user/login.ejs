@@ -1,0 +1,41 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<body style="background-image: url('https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')";>
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+            <h2><strong>Techie Goodies</strong></h2>
+            <img src="https://www.reliancedigital.in/medias/FOE-HDFC-Bank-Home-Page-Banner-21-10-2020.jpg?context=bWFzdGVyfGltYWdlc3wyMDEyNTV8aW1hZ2UvanBlZ3xpbWFnZXMvaDRlL2gxNC85NDA5NTgxODc1MjMwLmpwZ3w3NzI1YjI0Y2M4MGNlYjUzYzJlNTg5YWU5YTdjNzc1ZWU2NTY1YWFkYzYzZDI3NDU3MmY5MmZmMzkwYjA1MjM5" width="1000px" height="180px";>
+            </div>
+        </header>
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height:30vh">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body" >
+                        <div class=form-group>
+                            <strong>LOGIN</strong>
+                        </div>
+                        <form action="/user/login" autocomplete="off" method="POST">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" placeholder="EMAIL" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="PASSWORD" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-control">login</button>
+                        </form>
+                        <% if(message){ %>
+                            <div class="form-group">
+                                <p style="color: red;"><Strong><%=message%></Strong></p>
+                            </div>
+                        <% } %> 
+                        <div class="form-group">
+                            <p style="color: lightgreen; font-size: small;"><a href="/user/register">create a new account</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>

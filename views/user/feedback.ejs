@@ -1,0 +1,97 @@
+<html>
+    
+<head>
+  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400i' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div id="thankyou">
+    <h2 id="h2thankyou">Thank you for your Feedback!</h2>
+  </div>
+  <div><a id="linkback" href="/user/profile">Take me back please!</a></div>
+</body>
+
+<style>
+    body {
+  background-color: #f8f0d5;
+  text-align: center;
+}
+
+#thankyou {
+  background-color: white;
+  border-radius: 10px;
+  height: 280px;
+  width: 300px;
+  border: 6px solid #e2552d;
+  box-shadow: 7px 7px 4px #4999b6;
+  margin: 250px auto 50px;
+  text-align: center;
+  -webkit-animation: flash 1.2s ease 0s infinite;
+  animation: flash 1.2s ease 0s infinite;
+}
+
+#h2thankyou {
+  color: #4999b6;
+  padding: 32px;
+  font-size: 44px;
+  font-family: 'Open Sans', 'sans-serif';
+  -webkit-animation: flashtwo 1.2s linear 0s infinite;
+  animation: flashtwo 1.2s linear 0s infinite;
+}
+a {
+  text-decoration: none;
+  color: #4999b6;
+}
+
+#linkback {
+  font-family: 'Open Sans','sans-serif';
+  text-decoration: none;
+  padding: 12px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 4px;
+  margin: 50px auto;
+  width: 200px;
+}
+
+#linkback:hover {
+  background-color: #e2552d;
+}
+
+a:hover {
+  color: white;
+}
+
+@keyframes flash {
+  0% {
+    background-color: white;
+  }
+  49% {
+    background-color: white;
+  }
+  50% {
+    background-color: #e2552d;
+  }
+  100% {
+    background-color: #e2552d;
+  }
+}
+
+@keyframes flashtwo {
+  0% {
+    color: #e2552d;
+  }
+  49% {
+    color: #e2552d;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+</style>
+
+</html>

@@ -1,0 +1,141 @@
+<%- include("../../partials/header.ejs") %>
+<title>OnlineStore</title>
+<body  style="background-image: url('https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');"></body>>
+<style>
+  
+  </style>
+</body>
+
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+            <h2><strong>Techie Goodies</strong></h2>
+            <img src="https://www.reliancedigital.in/medias/FOE-HDFC-Bank-Home-Page-Banner-21-10-2020.jpg?context=bWFzdGVyfGltYWdlc3wyMDEyNTV8aW1hZ2UvanBlZ3xpbWFnZXMvaDRlL2gxNC85NDA5NTgxODc1MjMwLmpwZ3w3NzI1YjI0Y2M4MGNlYjUzYzJlNTg5YWU5YTdjNzc1ZWU2NTY1YWFkYzYzZDI3NDU3MmY5MmZmMzkwYjA1MjM5 "width="1000px" height="230px" opacity="0.9";>
+            </div>
+        </header>
+        <nav><div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#" >2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+          </div></nav>
+    </div>
+    <div class="container">
+        <div class="row text-center" style="display: flex; flex-wrap:wrap;">  
+            <% products.forEach(function(prod){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img class="image-responsive" src="<%=prod.imagePath%>">
+                        <h3><strong><%=prod.title%></strong></h3>
+                        <div class="caption">
+                            <p class="description"><%=prod.description%></p>
+                            <div class="clearfix">
+                                <div class="price ">
+                                    <p><strong>Price: </strong>Rs <%=prod.price%></p>
+                                </div>
+                                <div class="form-group">
+                                    <a href="purchase/<%=prod._id%>" class="btn btn-success form-control" role="button">Buy</a> 
+                                </div>
+                                <div class="form-group">
+                                    <a href="/add-to-cart/<%=prod._id%>" class="btn btn-success form-control" role="button">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }) %> 
+        </div>
+    </div>   
+        
+        
+        
+        </body>
+
+<style>
+    .pagination {
+      display: inline-block;
+    }
+    
+    .pagination a {
+      color:whitesmoke;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 1px solid #ddd;
+    }
+    
+    .pagination a.active {
+      background-color: #4CAF50;
+      color: white;
+      border: 1px solid #4CAF50;
+    }
+    
+    .pagination a:hover:not(.active) {background-color: #ddd;}
+    </style>
+<footer>
+    <div class="container">
+    <p style="color:whitesmoke"><b><u>Disclaimer</u><br>Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product.</p>
+<p style="color:whitesmoke">Copyright &copy;2020</b></p>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<style>
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+</style>
+
+</footer>

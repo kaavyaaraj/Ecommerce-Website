@@ -1,0 +1,47 @@
+<%- include("../../partials/header.ejs") %>
+<body></body>
+  <body style="background-image: url('https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')";>  
+<style>
+    
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+            <% if (products) { %>
+            <ul class="list-group">
+                <div class="list-group-item">
+                    <h1><strong>SHOPPING CART</strong></h1>
+                </div>
+                <% products.forEach(function(prod){ %>
+                    <li class="list-group-item">
+                        <span class="badge"><%=prod.qty%></span>
+                        <strong><%=prod.item.title%></strong>
+                        <span class="label labe-success"><%=prod.price%></span>
+                    </li>
+                <% }) %>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+                        <h2><strong>Total: <%=totalPrice%></strong></h2>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+                        <a href ="/shopping-cart"><button class="btn btn-success" type="button">CheckOut</button></a>
+                        <a href="/clear-cart"><button class="btn btn-danger" type="button">Clear Cart</button></a>
+                    </div>
+                </div>
+            </ul>
+            <% } else { %>
+                <div class = "list-group-item">
+                    <img src="https://www.reliancedigital.in/build/client/images/emptycart.png" height="300px" width="300px">
+                    <h3>You haven't brought anything yet</h3>
+                    <h4><a href="/">Continue Shopping</a></h4>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    
+</div>
+</body>
