@@ -1,6 +1,5 @@
 # Electronic-Website(Techie Goodies)
 
-![os1](https://user-images.githubusercontent.com/84704414/123649988-d1426880-d847-11eb-92de-58a501f23c27.PNG)
 
 
 Technologies:
